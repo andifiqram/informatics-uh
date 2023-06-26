@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/images/logo-unhas.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <title>Web Teknik Informatika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+</head>
+
+<body class="overflow-x-hidden min-h-screen">
+    <nav class="w-full bg-[#213363] bg-opacity-90 py-4 px-12 rounded-b-sm shadow-xl flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="/assets/images/logo-unhas.png" alt="logo" class="w-12 h-12" />
+            <div class="flex flex-col justify-between text-white">
+                <p>UNIVERSITAS HASANUDDIN</p>
+                <strong>Department of Informatics</strong>
+            </div>
+        </div>
+    </nav>
+    <header class="w-full bg-[#213363] py-4 px-12 rounded-b-sm shadow-xl flex justify-center items-center">
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+                class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                    <a href="/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0"
+                        aria-current="page">Home</a>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#B52218] md:border-0 md:p-0 md:w-auto">
+                        Profile
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/profile/bachelor-program/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Bachelor
+                                    Program</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Master
+                                    Program</a>
+                            </li>
+                            <li>
+                                <a href="/profile/structural-organization/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Structurational
+                                    Organization</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Academic
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar2"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/academic/bachelor-program"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Bachelor
+                                    Program</a>
+                            </li>
+                            <li>
+                                <a href="https://eng.unhas.ac.id/informatics/s2" target="_blank"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Master
+                                    Program</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar3"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Resources & Outcomes
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar3"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/resources/teaching-staf/index.html"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Teaching
+                                    Staff</a>
+                            </li>
+                            <li>
+                                <a href="/resources/administratif-staf/index.html"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Administrative
+                                    Staff</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Research</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Community
+                                    Service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Publication</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Laboratory</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-[#B52218] md:p-0 md:w-auto">
+                        Student & Alumni
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar4"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/student"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Student</a>
+                            </li>
+                            <li>
+                                <a href="/alumni" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Alumni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar5"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Quality Control
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar5"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/quality-control/form/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Survey Form</a>
+                            </li>
+                            <li>
+                                <a href="/quality-control/survey-result/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Survey
+                                    Result</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar6"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Facilities
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar6"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="https://unhas.ac.id/petakampus/virtualtour/index.php"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Campus Virtual
+                                    Tour</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Learning
+                                    Facilities</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Library</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">other Supporting
+                                    Facilities</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Student
+                                    Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-[#B52218] md:p-0"
+                        aria-current="page">Downloads</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="w-full h-fit container flex flex-col gap-12 p-4 m-auto">
+        <div class="w-full bg-[#213363] p-4 rounded-r-sm border-l-4 border-l-[#99DBF5] text-white font-bold">
+            <h1>Alumni</h1>
+        </div>
+        <div class="w-full grid grid-cols-2 gap-4">
+            <div class="col-span-1 grid gap-4">
+                <article class="text-justify">
+                    The Quality Assurance and Educational Development (LPMPP) Unhas conducted an audit process that uses
+                    formal tracer
+                    studies to alumni and users. The respondents are 2016-2020 graduates who have worked in various
+                    fields, especially IT,
+                    to reflect their educational experience in the program and its impact on their professional career
+                    path. This audit is
+                    also carried out to ensure that the educational process has met the expectations and standards of
+                    stakeholders. The
+                    majority of ISP-UH graduates work as IT Consultants (23%) and Private Sector Employees (22%), and
+                    the rest work as Civil
+                    servants, IT Developers, IT Academician or IT Entrepreneur. In addition, the result of the tracer
+                    study is used as a
+                    standard and reference as a discussion of curriculum materials, workshops and learning evaluation to
+                    achieve the PLO
+                    objectives
+                </article>
+                <img src="https://eng.unhas.ac.id/informatics/s/uploads/1_1_fa5ad5ea2b.png" alt="chart" />
+            </div>
+            <div class="col-span-1 grid gap-4">
+                <article>
+                    The alumni feedback that almost 80% showed satisfaction with their knowledge, skills, and
+                    competencies in work,
+                    research, and development. However, some alumni also want more improvement in the three existing
+                    PLOs, especially in
+                    developing skills. Furthermore, alumni users also provide excellent satisfaction feedback above 50%,
+                    especially in PLO 1
+                    and 3. especially PLO 1 and 3. Meanwhile, based on the survey results, it is still necessary to
+                    increase the ability of
+                    alumni in terms of research and development related to professional responsibilities.
+                </article>
+                <img src="data:image/png;base64,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"
+                    alt="chart 2">
+            </div>
+        </div>
+    </main>
+    <footer class="w-full p-4 grid gap-4 bg-[#213363]">
+        <div class="w-full p-4 grid grid-cols-2 place-content-center text-white">
+            <div class="w-full grid place-content-center place-items-start gap-4">
+                <div class="grid gap-2">
+                    <h2 class="text-3xl">Kontak</h2>
+                    <ul>
+                        <li>Kampus 1 : Jalan Perintis Kemerdekaan Km.10, Makassar</li>
+                        <li>Kampus 2 : Jln. Poros Malino Km.6, Gowa</li>
+                        <li>Email : informatika@unhas.ac.id</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full grid gap-4">
+                <h2 class="text-3xl">Peta Kampus</h2>
+                <div class="w-full h-96 rounded-sm overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63576.36508938421!2d119.42362216724854!3d-5.180156386039216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee13639154f11%3A0x77d363f632d6f859!2sUniversitas%20Hasanuddin%20Kampus%20FAKULTAS%20TEKNIK%20Gowa!5e0!3m2!1sen!2sid!4v1687442268813!5m2!1sen!2sid"
+                        class="w-[640px] h-full rounded-sm" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr class="w-full bg-white bg-opacity-40" />
+        <ul class="w-full flex justify-between items-center text-white text-opacity-80">
+            <li><a target="_blank" class="cursor-pointer" href="https://unhas.ac.id">https://unhas.ac.id</a></li>
+            <li><a target="_blank" class="cursor-pointer" href="https://sso.unhas.ac.id">https://sso.unhas.ac.id</a>
+            </li>
+            <li><a target="_blank" class="cursor-pointer"
+                    href="https://neosia.unhas.ac.id">https://neosia.unhas.ac.id</a></li>
+            <li><a target="_blank" class="cursor-pointer"
+                    href="https://digilib.unhas.ac.id">https://digilib.unhas.ac.id</a></li>
+            <li><a target="_blank" class="cursor-pointer"
+                    href="https://repository.unhas.ac.id">https://repository.unhas.ac.id</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

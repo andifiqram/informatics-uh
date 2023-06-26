@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/images/logo-unhas.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <title>Web Teknik Informatika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+</head>
+
+<body class="overflow-x-hidden min-h-screen">
+    <nav class="w-full bg-[#213363] bg-opacity-90 py-4 px-12 rounded-b-sm shadow-xl flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="/assets/images/logo-unhas.png" alt="logo" class="w-12 h-12" />
+            <div class="flex flex-col justify-between text-white">
+                <p>UNIVERSITAS HASANUDDIN</p>
+                <strong>Department of Informatics</strong>
+            </div>
+        </div>
+    </nav>
+    <header class="w-full bg-[#213363] py-4 px-12 rounded-b-sm shadow-xl flex justify-center items-center">
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+                class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                    <a href="/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0"
+                        aria-current="page">Home</a>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-[#B52218] md:p-0 md:w-auto">
+                        Profile
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/profile/bachelor-program/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Bachelor
+                                    Program</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Master
+                                    Program</a>
+                            </li>
+                            <li>
+                                <a href="/profile/structural-organization/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Structurational
+                                    Organization</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Academic
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar2"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/academic/bachelor-program"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Bachelor
+                                    Program</a>
+                            </li>
+                            <li>
+                                <a href="https://eng.unhas.ac.id/informatics/s2" target="_blank"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Master
+                                    Program</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar3"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Resources & Outcomes
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar3"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/resources/teaching-staf/index.html"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Teaching
+                                    Staff</a>
+                            </li>
+                            <li>
+                                <a href="/resources/administratif-staf/index.html"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Administrative
+                                    Staff</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Research</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Community
+                                    Service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Publication</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Laboratory</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Student & Alumni
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar4"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/student"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Student</a>
+                            </li>
+                            <li>
+                                <a href="/alumni" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Alumni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar5"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Quality Control
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar5"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="/quality-control/form/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Survey Form</a>
+                            </li>
+                            <li>
+                                <a href="/quality-control/survey-result/"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Survey
+                                    Result</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar6"
+                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B52218] md:p-0 md:w-auto">
+                        Facilities
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar6"
+                        class="w-fit z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="https://unhas.ac.id/petakampus/virtualtour/index.php"
+                                    class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Campus Virtual
+                                    Tour</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Learning
+                                    Facilities</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Library</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">other Supporting
+                                    Facilities</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-[#B52218] hover:text-white">Student
+                                    Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-[#B52218] md:p-0"
+                        aria-current="page">Downloads</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="w-full h-fit container flex flex-col gap-12 p-4 m-auto">
+        <div class="w-full bg-[#213363] p-4 rounded-r-sm border-l-4 border-l-[#99DBF5] text-white font-bold">
+            <h1>Structural Organization</h1>
+        </div>
+        <img src="/assets//images/structure.png" alt="structure">
+    </main>
+    <footer class="w-full p-4 grid gap-4 bg-[#213363]">
+        <div class="w-full p-4 grid grid-cols-2 place-content-center text-white">
+            <div class="w-full grid place-content-center place-items-start gap-4">
+                <div class="grid gap-2">
+                    <h2 class="text-3xl">Kontak</h2>
+                    <ul>
+                        <li>Kampus 1 : Jalan Perintis Kemerdekaan Km.10, Makassar</li>
+                        <li>Kampus 2 : Jln. Poros Malino Km.6, Gowa</li>
+                        <li>Email : informatika@unhas.ac.id</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full grid gap-4">
+                <h2 class="text-3xl">Peta Kampus</h2>
+                <div class="w-full h-96 rounded-sm overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63576.36508938421!2d119.42362216724854!3d-5.180156386039216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee13639154f11%3A0x77d363f632d6f859!2sUniversitas%20Hasanuddin%20Kampus%20FAKULTAS%20TEKNIK%20Gowa!5e0!3m2!1sen!2sid!4v1687442268813!5m2!1sen!2sid"
+                        class="w-[640px] h-full rounded-sm" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr class="w-full bg-white bg-opacity-40" />
+        <ul class="w-full flex justify-between items-center text-white text-opacity-80">
+            <li><a target="_blank" class="cursor-pointer" href="https://unhas.ac.id">https://unhas.ac.id</a></li>
+            <li><a target="_blank" class="cursor-pointer" href="https://sso.unhas.ac.id">https://sso.unhas.ac.id</a>
+            </li>
+            <li><a target="_blank" class="cursor-pointer"
+                    href="https://neosia.unhas.ac.id">https://neosia.unhas.ac.id</a></li>
+            <li><a target="_blank" class="cursor-pointer"
+                    href="https://digilib.unhas.ac.id">https://digilib.unhas.ac.id</a></li>
+            <li><a target="_blank" class="cursor-pointer"
+                    href="https://repository.unhas.ac.id">https://repository.unhas.ac.id</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
